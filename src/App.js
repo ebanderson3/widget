@@ -13,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <h1>Users</h1>
+      <p>~ Hello ~</p>
+      <fieldset></fieldset>
       {users.map((user) => (
         <p key={user.id}>{user.name}</p>
       ))}
