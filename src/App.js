@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import "./clock.js"
 import "./App.css";
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -12,6 +12,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Clock />
       <h1>Users</h1>
       <p>Hello World</p>
       <button type="submit"></button>
@@ -21,5 +22,4 @@ function App() {
     </div>
   );
 }
-export default App;
-
+export default App();
