@@ -6,16 +6,16 @@
 }
 
 .clock h1 {
-    border: 2px solid burlywood;
+    border: 2px solid white;
     width: 250px;
     margin: 40vh auto 0px auto;
     border-radius: 15px;
     padding: 10px 0;
-    background-color: cornsilk;
+    background-color: black;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
-    color: greenyellow;
+    color: white;
 }
