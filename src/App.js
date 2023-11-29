@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
+import { Clock } from "./components/clock.js"
 import "./App.css";
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch(`/api/users`)
-      .then((res) => res.json())
-      .then((data) => setUsers(data));
+    // fetch(`/api/users`)
+    //   .then((res) => res.json())
+    //   .then((data) => setUsers(data));
   }, []);
   return (
     <div className="App">
+      <Clock />
       <h1>Users</h1>
       <p>Hello World</p>
       <button type="submit"></button>
@@ -22,4 +22,3 @@ function App() {
   );
 }
 export default App;
-
