@@ -5,7 +5,6 @@ import { SearchBar } from "./components/searchBar.js"
 import "./App.css";
 
 function App() {
-  const [users, setUsers] = useState([]);
   const [currentColor, setCurrentColor] = useState("")
 
   return (
