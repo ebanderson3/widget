@@ -9,12 +9,12 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar />
       <SketchPicker 
       color={currentColor}
       onChange={(event) => {setCurrentColor(event.hex)}}
       />
       <Clock color={currentColor}/>
+      <SearchBar />
     </div>
   );
 }
