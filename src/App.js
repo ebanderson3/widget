@@ -11,13 +11,14 @@ function App() {
 
   return (
     <div className="App" style={{backgroundImage: `url(${background_url})`}}>
-      <SearchBar />
       <SketchPicker 
       color={currentColor}
       onChange={(event) => {setCurrentColor(event.hex)}}
       />
+      <div className="mainContent">
       <Clock color={currentColor}/>
       <SearchBar />
+      </div>
     </div>
   );
 }

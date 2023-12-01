@@ -1,6 +1,5 @@
 .clock {
-    width: 95vw;
-    height: 95vh;
+    margin: auto;
     overflow: hidden;
     text-align: center;
 }
@@ -9,6 +8,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
     color: var(--userColor);
-    opacity: 0.75;
-    text-shadow: 2px 2px 8px grey;
+    opacity: 0.8;
+    text-shadow: 2px 2px 8px black;
 }
