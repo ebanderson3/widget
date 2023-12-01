@@ -5,17 +5,9 @@
     text-align: center;
 }
 
-.clock h1 {
-    border: 2px solid white;
-    width: 250px;
-    margin: 40vh auto 0px auto;
-    border-radius: 15px;
-    padding: 10px 0;
-    background-color: black;
-    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-}
-
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+#time {
+    font-family: 'Roboto', sans-serif;
+    font-size: 175px;
+    color: var(--userColor);
+    opacity: 0.75;
 }
