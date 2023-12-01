@@ -1,0 +1,11 @@
+.App {
+    width: 100vw;
+    overflow: hidden;
+    filter: brightness(80%);
+    
+}
+
+body {
+    margin: 0;
+    
+}
