@@ -1,5 +1,4 @@
 import "./searchBar.css";
-import {useState,useEffect} from "react";
 
 export function SearchBar() {
 

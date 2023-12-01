@@ -10,7 +10,7 @@ function App() {
   let background_url = "https://images.unsplash.com/photo-1617558541906-6512230bb94f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   return (
-    <div className="App" style={{background: `url(${background_url})`}}>
+    <div className="App" style={{backgroundImage: `url(${background_url})`}}>
       <SearchBar />
       <SketchPicker 
       color={currentColor}
