@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { Clock } from "./components/clock.js"
 import { SketchPicker } from "react-color";
 import { SearchBar } from "./components/searchBar.js"
-import { background_list } from "./components/backgroundList.js"
+import { backgroundList } from "./components/backgroundList.js"
 import "./App.css";
 
 function App() {
   const [currentColor, setCurrentColor] = useState("")
+  const [backgroundUrl] = useState(backgroundList[Math.floor(Math.random() * backgroundList.length)]);
 
-  let background_url = background_list[Math.floor(Math.random() * background_list.length)];
 
   return (
-    <div className="App" style={{backgroundImage: `url(${background_url})`}}>
+    <div className="App" style={{backgroundImage: `url(${backgroundUrl})`}}>
       <SearchBar />
       <SketchPicker 
       color={currentColor}
