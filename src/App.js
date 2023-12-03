@@ -17,8 +17,10 @@ function App() {
       color={currentColor}
       onChange={(event) => {setCurrentColor(event.hex)}}
       />
+      <div className="mainContent">
       <Clock color={currentColor}/>
       <SearchBar />
+      </div>
     </div>
   );
 }
