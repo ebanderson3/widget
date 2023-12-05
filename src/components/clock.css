@@ -1,21 +1,13 @@
 .clock {
-    width: 95vw;
-    height: 95vh;
+    margin: auto;
     overflow: hidden;
     text-align: center;
 }
 
-.clock h1 {
-    border: 2px solid white;
-    width: 250px;
-    margin: 40vh auto 0px auto;
-    border-radius: 15px;
-    padding: 10px 0;
-    background-color: black;
-    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-}
-
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+#time {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    color: var(--userColor);
+    opacity: 0.8;
+    text-shadow: 2px 2px 8px black;
 }
