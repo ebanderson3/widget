@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Draggable from "react-draggable";
 import './clock.css';
 
 export function Clock({ color }) {
@@ -16,9 +17,11 @@ export function Clock({ color }) {
     setInterval(updateTime, 1000);
 
     return (
-        <div className="clock">
-            <h1 id="time">{currentTime}</h1>
-        </div>
+        <Draggable>
+            <div className="clock">
+                <h1 id="time">{currentTime}</h1>
+            </div>
+        </Draggable>
     )
 }
 
