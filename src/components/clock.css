@@ -5,7 +5,6 @@
 }
 
 #time {
-    font-family: 'Roboto', sans-serif;
     font-size: 100px;
     color: var(--userColor);
     opacity: 0.8;
