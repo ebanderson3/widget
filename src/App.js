@@ -11,8 +11,7 @@ function App() {
 
 
   return (
-    <div className="App" style={{backgroundImage: `url(${backgroundUrl})`}}>
-      <SearchBar />
+    <div className="App" style={{backgroundImage: `url(${backgroundUrl})`, filter: `brightness(80%)`}}>
       <SketchPicker 
       color={currentColor}
       onChange={(event) => {setCurrentColor(event.hex)}}
