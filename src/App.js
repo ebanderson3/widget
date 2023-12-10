@@ -5,6 +5,7 @@ import { SearchBar } from "./components/searchBar.js"
 import { backgroundList } from "./components/backgroundList.js"
 import "./App.css";
 import { Menu} from "./components/menu.js";
+import Calculator from "./components/calculator.js";
 
 function App() {
   const [currentColor, setCurrentColor] = useState("")
@@ -17,6 +18,7 @@ function App() {
       <div className="mainContent">
         <Clock color={currentColor}/>
         <SearchBar />
+        <Calculator />
         <Menu />
       </div>
     </div>
