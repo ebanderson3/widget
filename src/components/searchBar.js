@@ -12,7 +12,7 @@ export function SearchBar() {
     }
 
     return (
-        <Draggable axis={draggable}>
+        <Draggable>
             <div className="SearchBar">
                 <input type="text" placeholder="Search with Google" onKeyDown={(e) => search(e)}></input>
             </div>
