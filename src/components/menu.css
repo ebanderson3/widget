@@ -23,6 +23,15 @@
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 8px black;
+    border-radius: 10px;
+    color: white;
 }
 
 .buttonToggle {
@@ -30,6 +39,14 @@
     top: 97.5%;
     left: 97.5%;
     transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 8px black;
+    border-radius: 10px;
+    color: white;
+
 }
 
 .closeMenu {
@@ -37,6 +54,11 @@
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    outline: none;
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 8px black;
+    border-radius: 10px;
 }
 
 .menuBody {

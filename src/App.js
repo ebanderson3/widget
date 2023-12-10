@@ -14,15 +14,10 @@ function App() {
   return (
     <div className="App" >
       <div className="background" style={{backgroundImage: `url(${backgroundUrl})`}}></div>
-      
-      <SketchPicker 
-      color={currentColor}
-      onChange={(event) => {setCurrentColor(event.hex)}}
-      />
       <div className="mainContent">
-      <Clock color={currentColor}/>
-      <SearchBar />
-      <Menu />
+        <Clock color={currentColor}/>
+        <SearchBar />
+        <Menu />
       </div>
     </div>
   );
