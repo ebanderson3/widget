@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { SketchPicker } from "react-color";
+import { ChromePicker } from "react-color";
+import rgbHex from "rgb-hex";
 import "./menu.css";
 
 export function Menu(){
     const [menu, setMenu] = useState(false);
-    const [apply, setApply] = useState(false);
     const [widgetColor, setColor] = useState(localStorage.getItem("widgetColor"))
     
 
@@ -13,12 +13,14 @@ export function Menu(){
     }
 
     const handleWidgetColorChange = (e) => {
-        
-        localStorage.setItem("widgetColor", e.hex)
-        setColor(prev => {return e.hex})
-        
-        
-        
+        let rgbaToHex = "#" + rgbHex(e.rgb.r, e.rgb.g, e.rgb.b, e.rgb.a)
+
+        localStorage.setItem("widgetColor", rgbaToHex)
+
+        const r = document.querySelector(":root")
+        r.style.setProperty('--widgetColor', rgbaToHex)
+
+        setColor(rgbaToHex)
     }
 
     return (
@@ -47,30 +49,15 @@ export function Menu(){
                                 <h2>Section 1</h2>
                                 <p>Dialog about options</p>
                             </div>
-                            <SketchPicker
+                            <button id="colorChange" className="changeWidgetColor">Widget Color</button>
+                            <button id="colorChange" className="changeFontColor">Font Color</button>
+                            <ChromePicker
                             id="colorChange" 
                             color={widgetColor}
                             onChange={handleWidgetColorChange}
                             />
-                            <button id="colorChange">Apply</button>
-                            <div className="menuRow">
-                                <h2>Section 2</h2>
-                                <p>Dialog about options</p>
-                            </div>
-                            <div className="menuRow">
-                                <h2>Section 2</h2>
-                                <p>Dialog about options</p>
-                            </div>
-                            <div className="menuRow">
-                                <h2>Section 2</h2>
-                                <p>Dialog about options</p>
-                            </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
             )}

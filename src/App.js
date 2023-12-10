@@ -11,12 +11,15 @@ function App() {
   const [currentColor, setCurrentColor] = useState("")
   const [backgroundUrl] = useState(backgroundList[Math.floor(Math.random() * backgroundList.length)]);
 
+  const r = document.querySelector(":root")
+  r.style.setProperty('--widgetColor', localStorage.getItem("widgetColor")
+  )
 
   return (
     <div className="App" >
       <div className="background" style={{backgroundImage: `url(${backgroundUrl})`}}></div>
       <div className="mainContent">
-        <Clock color={currentColor}/>
+        <Clock />
         <SearchBar />
         <Calculator />
         <Menu />

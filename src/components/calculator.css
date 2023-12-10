@@ -9,7 +9,7 @@
     background: #353535;
     padding: 10px 10px;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--widgetColor);
     outline: none;
     border: none;
     backdrop-filter: blur(10px);

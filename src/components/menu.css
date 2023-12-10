@@ -23,12 +23,12 @@
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--widgetColor);
     outline: none;
     border: none;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 8px black;
-    color: white;
+    color: var(--fontColor);
 }
 
 .buttonToggle {

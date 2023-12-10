@@ -1,5 +1,5 @@
 .SearchBar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--widgetColor);
     width: 50%;
     border-radius: 10px;
     height: 2.5rem;
