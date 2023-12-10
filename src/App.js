@@ -12,11 +12,12 @@ function App() {
 
 
   return (
-    <div className="App" style={{backgroundImage: `url(${backgroundUrl})`, filter: `brightness(80%)`}}>
+    <div className="App" >
+      <div className="background" style={{backgroundImage: `url(${backgroundUrl})`}}></div>
       <div className="mainContent">
-      <Clock color={currentColor}/>
-      <SearchBar />
-      <Menu />
+        <Clock color={currentColor}/>
+        <SearchBar />
+        <Menu />
       </div>
     </div>
   );
