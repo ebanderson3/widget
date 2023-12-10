@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: flex-end;
     opacity: 70%;
-  }
+}
   
   .display input[type="text"] {
     width: calc(100% - 20px);
@@ -31,6 +31,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 5px;
+    font-size: 1.2rem;
+    
   }
   
   .keypad {
