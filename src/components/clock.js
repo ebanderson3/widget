@@ -4,9 +4,6 @@ import './clock.css';
 export function Clock({ color }) {
     let time = new Date().toLocaleTimeString();
     const [currentTime, setCurrentTime] = useState(time);
-    
-    const root = document.querySelector(':root');
-    root.style.setProperty('--userColor', color);
 
     const updateTime = () => {
         let time = new Date().toLocaleTimeString();
