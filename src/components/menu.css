@@ -12,6 +12,10 @@
     background: rgba(49,49,49,0.8);
 }
 
+.menuHeader {
+    font-family: 'Roboto', sans-serif;
+}
+
 .menuContent {
     position: absolute;
     top: 40%;
@@ -33,16 +37,16 @@
 
 .buttonToggle {
     position: absolute;
-    top: 97.5%;
-    left: 97.5%;
+    top: 96.5%;
+    left: 96.5%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
     outline: none;
     border: none;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 8px black;
     border-radius: 10px;
-    color: white;
+    color: var(--fontColor);
+    background-color: var(--widgetColor);
 
 }
 
