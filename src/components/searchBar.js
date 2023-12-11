@@ -1,6 +1,9 @@
 import "./searchBar.css";
+import Draggable from "react-draggable";
+import { useState } from "react";
 
 export function SearchBar() {
+    const [draggable, setDraggable] = useState(false);
 
     const search = (e) => {
         if (e.keyCode === 13) {
@@ -9,9 +12,11 @@ export function SearchBar() {
     }
 
     return (
-        <div className="SearchBar">
-            <input type="text" placeholder="Search with Google" onKeyDown={(e) => search(e)}></input>
-        </div>
+        <Draggable>
+            <div className="SearchBar">
+                <input type="text" placeholder="Search with Google" onKeyDown={(e) => search(e)}></input>
+            </div>
+        </Draggable>
     )
 }
 

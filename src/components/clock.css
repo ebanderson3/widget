@@ -2,12 +2,15 @@
     margin: auto;
     overflow: hidden;
     text-align: center;
+    top: 20%;
+    left: 40%;
+    position: absolute;
 }
 
 #time {
-    font-family: 'Roboto', sans-serif;
     font-size: 100px;
-    color: var(--userColor);
+    color: var(--fontColor);
     opacity: 0.8;
     text-shadow: 2px 2px 8px black;
+    font-family: 'Roboto', sans-serif;
 }

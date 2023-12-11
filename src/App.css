@@ -1,13 +1,27 @@
-.App {
+.background {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    filter: brightness(80%);
+    z-index: -1;
+    position: absolute;
+
 }
 
 body {
     margin: 0;
     
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --fontColor: rgba(255, 255, 255, 1);
+    --widgetColor: rgba(0, 0, 0, 0.5);
 }
