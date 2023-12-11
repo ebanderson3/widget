@@ -12,11 +12,10 @@
     background: rgba(49,49,49,0.8);
 }
 
-.menuHeader {
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .menuContent {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -33,6 +32,19 @@
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 8px black;
     color: var(--fontColor);
+}
+
+#colorChange {
+    outline: none;
+    border: none;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+#colorChange button:hover {
+    background-color: gray;
 }
 
 .buttonToggle {

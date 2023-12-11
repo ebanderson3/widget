@@ -51,7 +51,6 @@ export function Menu(){
                         <div className="menuColumn">
                             <div className="menuRow">
                                 <h2>Change Color</h2>
-                                <p>Dialog about options</p>
                             </div>
                             <button id="colorChange" className="changeWidgetColor" onClick={() => setModified("widget")}>Widget Color</button>
                             <button id="colorChange" className="changeFontColor" onClick={() => setModified("font")}>Font Color</button>
